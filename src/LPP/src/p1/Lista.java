@@ -53,7 +53,7 @@ public class Lista {
 			f = (Forma) i.next();
 			if(f instanceof Cilindro) {
 				c = (Cilindro) f;
-				volumes += "\n" + c.calculaVolume();
+				volumes += "\n" + String.format("Volume: %.3f", c.calculaVolume());
 				
 			}
 			
